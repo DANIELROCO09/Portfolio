@@ -4,7 +4,8 @@ const projects=[{
     "Collection of competitive programming problems, algorithmic challenges, and mathematical implementations.",
     image: "assets/codpro.png",
     stack:["shell"],
-    github:"#"},
+    github:"#",
+    link:"Projects/random-problems/random-problems.html"},
     {
     title: "Cryptocurrency + Social Media Signals",
     description:
@@ -33,7 +34,7 @@ projects.forEach(project => {
                     ${stackHTML}
                 </div>
                 <div class="project-footer">
-                    <a href="${project.github}" class="project-link">
+                    <a href="${project.link}" class="project-link">
                         View Project →
                     </a>
                 </div>
