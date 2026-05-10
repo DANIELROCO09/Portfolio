@@ -12,7 +12,8 @@ const projects=[{
     "Signal analysis platform combining cryptocurrency market data with social sentiment and trend extraction.",
     image: "assets/Crypto.png",
     stack:["Python", "NLP", "APIs"],
-    github:"#" 
+    github:"#",
+    link:"Projects/crypto-signals/crypto-signals.html"
     }
 ];
 

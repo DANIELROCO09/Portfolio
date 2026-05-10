@@ -652,7 +652,7 @@ footer p{
     height:100%;
 
     object-fit:cover;
-    object-position: center top;
+    
     transition:
     transform 0.6s ease,
     filter 0.4s ease;
@@ -755,4 +755,13 @@ footer p{
 
 .project-link:hover{
     color:white;
+}
+
+.stat-link{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    display:block;
 }
