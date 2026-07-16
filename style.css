@@ -156,11 +156,10 @@ section{
 
 .hero{
     min-height:100vh;
-
     display:flex;
     align-items:center;
-
     padding-top:8rem;
+    padding-left: 4%;
 }
 
 .hero-content{

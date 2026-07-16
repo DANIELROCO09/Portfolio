@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="emergente/emergente.css">
 </head>
 <body>
     <!--Navbar-->
@@ -15,7 +16,7 @@
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#notes">Notes</a>
-                <a href="#contact" class="btn-contact">Contact</a>
+                <a href="#" class="btn-contact">Contact</a>
             </div>
         </div>
     </nav>
@@ -23,8 +24,13 @@
     <section id="about" class="hero">
         <div class="hero-content">
             <h1>Hi, I'm Daniel </h1>
-            <h2>Data Engineer | Data Analyst | Performance Optimization</h2>
-            <p>Building scalable algorithms for web platforms, finance, and artificial intelligence.</p>
+            <h2>Applied Mathematician & Software Engineer | Data & Performance Optimization</h2>
+            <p>
+                I bridge the gap between rigorous mathematics and high-performance systems. 
+                As an Applied Mathematician and former ICPC competitor, I specialize in breaking down 
+                complex logic, eliminating performance bottlenecks, and building scalable data pipelines. 
+                If it’s mathematically sound, I make it computationally efficient.
+            </p>
             <!--buttons-->
             <div class="hero-buttons">
                 <a href="#projects" class="btn-primary">View Projects</a>
@@ -58,7 +64,6 @@
                 <a href="https://github.com/DANIELROCO09">GitHub</a>
                 <a href="#">Codeforces</a>
                 <a href="https://www.linkedin.com/in/danielrodriguezcorrea/">Linkedin</a>
-                <a href="mailto:drodriguezcorrea1@gmail.com">Contact</a>
             </div>
         </div>
 
@@ -66,7 +71,11 @@
         <aside class="right-column">
             <div class="philosophy-box">
                 <h3>Engineering Philosophy</h3>
-                <p>Abordo el desarrollo de software como una disciplina de optimización: transformo lógica matemática compleja en sistemas de alto desempeño.</p>
+                <p>
+                    I approach software engineering as an optimization discipline:
+                    I transform complex mathematical logic into high-performance systems. 
+                    If a problem is mathematically sound, I make it computationally efficient and production-ready.
+                </p>
             </div>
             
             <div class="research-box">
@@ -108,6 +117,19 @@
             </div>
         </div>
     </section>
+    <!--Emergente-->
+    <div id="contactModal" class="modal-overlay">
+        <div class="modal-card">
+            <button class="close-modal">&times;</button>
+            <h2>Let's Connect</h2>
+            <a href="mailto:drodriguezcorrea1@gmail.com" class="contact-link">Email </a>
+            <a href="https://www.linkedin.com/in/danielrodriguezcorrea/"" target="_blank" class="contact-link">LinkedIn</a>
+            <a href="https://github.com/DANIELROCO09" target="_blank" class="contact-link github">GitHub</a>
+            <a href="https://wa.me/525539227525" target="_blank" class="contact-link whatsapp">WhatsApp</a>
+            <a href="https://calendly.com/daniel-rodriguez-correa" target="_blank" class="contact-link special">Schedule Call</a>
+            <a href="assets/resume.pdf" target="_blank" class="contact-link cv-button">View Resume</a>
+        </div>
+    </div>
     <!--Footer/Contacto-->
     <footer id="contact">
         <div class="container">
@@ -119,8 +141,7 @@
             </div>
         </div>
     </footer>
-
-    <!--Conectamos scripts-->
+    <script src="emergente/emergente.js"></script>
     <script src="script.js"></script>
 
 </body>

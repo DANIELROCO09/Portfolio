@@ -1,0 +1,97 @@
+/* blog.css */
+:root {
+    --bg-dark: #0f172a;
+    --card-bg: rgba(30, 41, 59, 0.7);
+    --accent-blue: #00d4ff;
+    --text-main: #f8fafc;
+    --text-dim: #94a3b8;
+}
+
+.blog-body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Contenedor Principal */
+.blog-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 120px 25px 60px;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.blog-header h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(to right, #fff, var(--accent-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+/* La Rejilla (Grid) - Evita el efecto aplastado */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px; /* Espacio matemático exacto entre tarjetas */
+}
+
+/* Estilo de la Tarjeta */
+.blog-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-blue);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.15);
+}
+
+.blog-category {
+    color: var(--accent-blue);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.blog-card h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.blog-card p {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    flex-grow: 1; /* Empuja el botón hacia abajo para que todos alineen */
+}
+
+.read-more {
+    margin-top: 20px;
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}

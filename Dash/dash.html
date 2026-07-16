@@ -1,43 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8" />
-
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     />
-
     <title>Competitive Dashboard</title>
-
     <link rel="stylesheet" href="dash.css" />
-
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 </head>
-
 <body>
-
     <div class="bg-overlay"></div>
-
     <!-- NAVBAR -->
-
     <nav class="navbar">
-
         <div class="nav-container">
-
             <a href="../../index.html" class="logo">
                 DANIEL
             </a>
-
             <div class="nav-links">
-
                 <a href="../../index.html">
                     Portfolio
                 </a>
-
                 <a
                     href="https://codeforces.com/profile/Daniel0909"
                     target="_blank"
@@ -45,202 +29,115 @@
                 >
                     Codeforces
                 </a>
-
             </div>
-
         </div>
-
     </nav>
 
     <!-- HERO -->
-
     <section class="hero">
-
         <div class="hero-content">
-
             <span class="dashboard-label">
                 Competitive Programming Analytics
             </span>
-
             <h1>
                 Codeforces Dashboard
             </h1>
-
             <p class="hero-description">
 
-                Performance-oriented dashboard for tracking
-                algorithmic growth, contest progression,
-                solved problem distribution, and mathematical
-                problem-solving activity.
+                An analytics dashboard tracking my background in competitive programming and advanced logic. 
+                This data visualizes my capability to bridge the gap between rigorous mathematics and high-performance engineering—breaking down complex problems, 
+                eliminating computational bottlenecks, and building scalable data pipelines.
 
             </p>
-
         </div>
-
     </section>
-
     <!-- STATS -->
-
     <section class="stats-section">
-
         <div class="stats-grid">
-
             <div class="stat-card">
-
                 <span class="stat-label">
                     Current Rating
                 </span>
-
                 <h2>1190</h2>
-
                 <p>Newbie</p>
-
             </div>
-
             <div class="stat-card">
-
                 <span class="stat-label">
                     Problems Solved
                 </span>
-
                 <h2>200+</h2>
-
                 <p>Codeforces + Practice</p>
-
             </div>
-
             <div class="stat-card">
-
                 <span class="stat-label">
                     Primary Focus
                 </span>
-
                 <h2>Math</h2>
-
                 <p>Implementation & Logic</p>
-
             </div>
-
             <div class="stat-card">
-
                 <span class="stat-label">
                     Languages
                 </span>
-
                 <h2>C++</h2>
-
-                <p>Python • Java</p>
-
+                <p>Python • Java • JS</p>
             </div>
-
         </div>
-
     </section>
-
     <!-- CHARTS -->
-
     <section class="charts-section">
-
         <!-- TAGS -->
-
         <div class="chart-card">
-
             <div class="chart-header">
-
                 <h2>Tags Solved</h2>
-
                 <span>Problem Distribution</span>
-
             </div>
-
             <canvas id="tagsChart"></canvas>
-
         </div>
-
         <!-- RATING -->
-
         <div class="chart-card">
-
             <div class="chart-header">
-
                 <h2>Rating Progression</h2>
-
                 <span>Contest Evolution</span>
-
             </div>
-
             <canvas id="ratingChart"></canvas>
-
         </div>
-
     </section>
-
     <!-- STRONGEST TOPICS -->
-
     <section class="topics-section">
-
         <div class="topics-card">
-
             <div class="topics-header">
-
                 <h2>Strongest Topics</h2>
-
             </div>
-
             <div class="topic-item">
-
                 <div class="topic-info">
-
                     <span>Implementation</span>
-
                     <span>85%</span>
-
                 </div>
-
                 <div class="progress-bar">
                     <div class="progress implementation"></div>
                 </div>
-
             </div>
-
             <div class="topic-item">
-
                 <div class="topic-info">
-
                     <span>Math</span>
-
                     <span>72%</span>
-
                 </div>
-
                 <div class="progress-bar">
                     <div class="progress math"></div>
                 </div>
-
             </div>
-
             <div class="topic-item">
-
                 <div class="topic-info">
-
                     <span>Greedy</span>
-
                     <span>60%</span>
-
                 </div>
-
                 <div class="progress-bar">
                     <div class="progress greedy"></div>
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
     <script src="charts.js"></script>
-
 </body>
-
 </html>
